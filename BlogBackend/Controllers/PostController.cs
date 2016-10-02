@@ -11,8 +11,8 @@ namespace BlogBackend.Controllers
     public class PostController : ApiController
     {
         IList<Post> posts = new List<Post> {
-                new Post {Author = "Andrew Hore", Content = "Hello World!", Created = DateTime.UtcNow - TimeSpan.FromDays(7), Id = 1},
-                new Post {Author = "Andrew Hore", Content = "Hello World the Second?", Created = DateTime.UtcNow, Id = 2}
+                new Post {Author = "Andrew Hore", Title = "Obligatory first post", Content = "Hello World!", Created = DateTime.UtcNow - TimeSpan.FromDays(7), Id = 1},
+                new Post {Author = "Andrew Hore", Title = "Another post!", Content = "Hello World the Second?", Created = DateTime.UtcNow, Id = 2}
             };
 
         public IEnumerable<Post> GetAllPosts()
